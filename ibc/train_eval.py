@@ -24,6 +24,7 @@ from absl import app
 from absl import flags
 from absl import logging
 import gin
+from ibc.environments.arm_test import robot_arm_env  # pylint: disable=unused-import
 from ibc.environments.block_pushing import block_pushing  # pylint: disable=unused-import
 from ibc.environments.block_pushing import block_pushing_discontinuous  # pylint: disable=unused-import
 from ibc.environments.particle import particle  # pylint: disable=unused-import

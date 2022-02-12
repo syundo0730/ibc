@@ -15,7 +15,7 @@
 
 """Defines all the tasks supported. Used to define enums in train_eval, etc."""
 
-IBC_TASKS = ['REACH', 'PUSH', 'INSERT', 'PARTICLE', 'PUSH_DISCONTINUOUS',
+IBC_TASKS = ['ARM', 'REACH', 'PUSH', 'INSERT', 'PARTICLE', 'PUSH_DISCONTINUOUS',
              'PUSH_MULTIMODAL']
 ADROIT_TASKS = ['pen-human-v0', 'hammer-human-v0', 'door-human-v0',
                 'relocate-human-v0',]

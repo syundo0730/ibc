@@ -39,7 +39,9 @@ FLAGS = flags.FLAGS
 
 def get_env_name(task, shared_memory_eval, use_image_obs=False):
   """Returns environment name for a given task."""
-  if task in ['REACH', 'PUSH', 'INSERT', 'REACH_NORMALIZED', 'PUSH_NORMALIZED']:
+  if task in ['ARM']:
+    env_name = 'ScalaArm-v0'
+  elif task in ['REACH', 'PUSH', 'INSERT', 'REACH_NORMALIZED', 'PUSH_NORMALIZED']:
     env_name = block_pushing.build_env_name(
         task, shared_memory_eval, use_image_obs=use_image_obs)
   elif task in ['PUSH_DISCONTINUOUS']:
